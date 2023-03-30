@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5;
+    position: relative;
+  }
+  #title {
+    font-size: 24px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-weight: bold;
+    color: #007bff;
+  }
+  #inputContainer,
+  #taskFinished {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  input {
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    padding: 5px;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    font-size: 14px;
+    width: 150px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  input[type='number']::-webkit-outer-spin-button,
+  input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
+  #countdownContainer {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #countdown {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  #timerName {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  #taskFinished {
+    display: none;
+  }
+  #taskFinished h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  button:hover {
+    background-color: rgba(252, 188, 14);
+  }

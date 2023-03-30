@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Electron Timer</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="title">Electron Timer</div>
+    <div id="inputContainer">
+      <input type="text" id="taskName" placeholder="Task name" />
+      <input type="number" id="hoursInput" placeholder="Hours" />
+      <input type="number" id="minutesInput" placeholder="Minutes" />
+      <input type="number" id="secondsInput" placeholder="Seconds" />
+      <button id="startButton">Start Timer</button>
+    </div>
+    <div id="countdownContainer">
+      <div id="countdown"></div>
+      <div id="timerName"></div>
+    </div>
+    <div id="taskFinished">
+      <h2>This task is finished</h2>
+      <button id="resetButton">Finish</button>
+    </div>
+    <script src="renderer.js"></script>
+  </body>
+</html>
